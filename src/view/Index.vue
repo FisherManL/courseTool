@@ -73,9 +73,9 @@ export default defineComponent({
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  font-weight: 1200;
+  font-weight: bold;
   color: red;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 10px;
 }
 
@@ -100,7 +100,7 @@ export default defineComponent({
 .stuGroupArea {
   text-align: center;
   width: 100%;
-
+  user-select: none;
   div {
     margin-top: 20px;
   }

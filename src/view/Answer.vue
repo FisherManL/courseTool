@@ -162,15 +162,18 @@ body,
   span {
     margin: 30px;
   }
+  h1{
+    font-size: 30px;
+  }
 }
 .startButton {
   width: 200px;
   height: 200px;
   font-size: 40px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .showName {
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 30px;
   font-weight: 20px;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",

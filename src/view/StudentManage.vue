@@ -175,9 +175,13 @@ export default defineComponent({
         ).then(() => {
           util
             .readExcelFile(fileContent, 0)
-            .then((value) => {
-              store.commit("importStudent", value);
-              ElMessage.success("导入数据成功");
+            .then((value: any) => {
+              if (value == null || value.length < 1) {
+                ElMessage.error("导入文件为空或格式不正确");
+              } else {
+                store.commit("importStudent", value);
+                ElMessage.success("导入数据成功");
+              }
             })
             .catch((error) => {
               ElMessage.error("错误：" + error);
@@ -283,6 +287,7 @@ export default defineComponent({
     margin: 15px;
     min-width: 200px;
     text-align: center;
+    letter-spacing: 5px;
   }
 }
 .student {
